@@ -1,909 +1,1164 @@
-
 <!doctype html>
 <html ⚡>
-	<head>
-		<meta charset="utf-8">
-		<title>
-			Banh khuếch tán &ndash; Fresh Home Lab
-		</title>
-		
-		<link rel="canonical" href="banh-khuech-tan%EF%B9%96view=amp.html" />
-		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-		<link rel="shortcut icon" href="https://file.hstatic.net/200000210779/file/logo_web__2_-removebg-preview_20c6e6e5d305435397a4e02691c3bd77.png" type="image/png" />
-		<style amp-custom>body {
-	font-family: Roboto, sans-serif;
-	font-size: 14px;
-	color: #000;
-	}
-	ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	}
-	img {max-width: 100%;}
-	p {margin: 0 0 10px;}
-	a {text-decoration: none;color: #000;}
-	.clearfix:before, .clearfix:after {
-	display: table;
-	content: " ";
-	}
-	.clearfix:after {clear: both;}
-	.hidden {display: none;}
-	.flex {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	}
-	.flexbox-content {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 0;
-	-ms-flex: 1 1 0;
-	flex: 1 1 0;
-	padding: 0 10px 10px 0;
-	box-sizing: border-box;
-	max-width: 100%;
-	min-width: 0;
-	}
-	.flexbox-auto-80 {
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 80px;
-	-ms-flex: 0 0 80px;
-	flex: 0 0 80px;
-	}
-	.items-center {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	}
-	.justify-start {
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
-	}
-	.main-content-pd {padding: 0 10px;}
-	.ampstart-headerbar {
-	background: #fff;
-	color: #000;
-	z-index: 999;
-	box-shadow: 0 0 3px rgba(0,0,0,0.08);
-	}
-	.header-fixed {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	padding: 0 15px;
-	}
-	.ampstart-navbar-trigger {
-	line-height: 3.5rem;
-	font-size: 2rem;
-	}
-	.logo {margin: auto;}
-	.logo img {margin: 0;}
-	.logo a {font-size: 32px;color: #65d1e6;}
-	main {
-	padding-top: 57px;
-	margin-bottom: 20px;
-	}
-	section.slide {padding: 0 10px;margin-top:10px;}
-	.pagination-default {
-	margin: 15px 0px;
-	padding: 0px 15px;
-	text-align: center;
-	}
-	.pagination-default > div {
-	display: inline-block;
-	}
-	.pagination-default a {
-	border: 1px solid #E5E5E5;
-	border-left: none;
-	float: left;
-	font-style: normal;
-	font-weight: normal;
-	padding: 0px 12px;
-	height: 33px;
-	line-height: 33px;
-	color: #000;
-	}
-	.pagination-default a:first-child {
-	border-left: 1px solid #E5E5E5;
-	}
-	.pagination-default a.prev, .pagination-default a.next,
-	.pagination-default a.prev-first, .pagination-default a.next-last {
-	color: #000;
-	font-size: 18px;
-	}
-	.pagination-default .current {
-	background: #EFEFEF;
-	color: #999;
-	}
-	.pagination-default a:hover {
-	background: #EFEFEF;
-	}
-	.ampstart-navbar-trigger {
-	cursor: pointer;
-	}
-	.amp-close-image {
-	top: 10px;
-	left: 220px;
-	cursor: pointer;
-	}
-	.bg-breadcrumb {
-	background: #f4f4f4;
-	margin-bottom: 15px;
-	}
-	.breadcrumb {
-	margin: 0px;
-	background:none;
-	padding: 8px 10px;
-	}
-	.breadcrumb a,
-	.breadcrumb span,
-	.breadcrumb li {
-	font-size: 10px;
-	color: #000;
-	white-space: normal;
-	float: left;
-	padding: 0 3px;
-	}
-	main .head-title h1 {
-	font-size: 20px;
-	margin: 0 0 15px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 23px;
-	}
-	main .layout-excerpt {
-	padding: 10px 20px;
-	background: #f7f7f7;
-	text-align: center;
-	}
-	main .layout-excerpt p {
-	margin: 0;
-	}
-	main .layout-content {
-	margin-top: 15px;
-	}
-	main .layout-content img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
-	
-	.blog-posts .blog-loop {margin-bottom: 25px;padding: 0 10px;}
-	.blog-posts .blog-post .blog-post-thumbnail {
-	margin-bottom: 25px;
-	display: block;
-	}
-	.blog-posts .blog-post .blog-post-title {
-	margin-bottom: 10px;
-	font-size: 16px;
-	text-transform: none;
-	letter-spacing: 0
-	}
-	.blog-posts .blog-post .blog-post-meta {
-	margin-bottom: 15px;
-	color: #999
-	}
-	.blog-posts .blog-post .blog-post-meta>span:after {
-	content: '/';
-	padding-left: 4px
-	}
-	.blog-posts .blog-post .blog-post-meta>span:last-child:after {
-	content: ''
-	}
-	.blog-posts .blog-post .blog-post-meta a {
-	color: #999
-	}
-	
 
-	footer {margin-top: 30px;}
-	footer .footer-top {
-	padding: 20px 10px;
-	border-bottom: 1px solid #e7e7e7;
-	border-top: 1px solid #e7e7e7;
-	}
-	footer a {color: #000;}
-	footer .title {
-	color: #ffffff;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: left;
-	margin-bottom: 15px;
-	overflow: hidden;
-	line-height: 30px;
-	}
-	footer .about_us .message {
-	margin-bottom: 15px;
-	padding: 0;
-	}
-	footer .about_us ul li {
-	padding: 0;
-	line-height: 30px;
-	}
-	footer .about_us i {
-	margin-right: 7px;
-	}
-	footer .list-styled > li {
-	padding: 0;
-	line-height: 20px;
-	overflow: hidden;
-	}
-	footer .list-styled > li > a {
-	padding: 5px 0;
-	display: inline-block;
-	position: relative;
-	-webkit-transition: all 0.25s ease-out;
-	-moz-transition: all 0.25s ease-out;
-	-o-transition: all 0.25s ease-out;
-	-ms-transition: all 0.25s ease-out;
-	transition: all 0.25s ease-out;
-	}
-	.footer-contact ul > li {
-	padding: 0 0px 5px 25px;
-	background-size: 15px 15px;
-	line-height: 22px;
-	font-size: 14px;
-	}
-	.footer-contact ul > li.contact-1 {
-	background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_1.png?v=167) no-repeat scroll 0px center;
-	background-size: 15px 15px;
-	}
-	.footer-contact ul > li.contact-2 {
-	background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_2.png?v=167) no-repeat scroll 0px center;
-	background-size: 15px 15px;
-	}
-	.footer-contact ul > li.contact-3 {
-	background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_3.png?v=167) no-repeat scroll 0px center;
-	background-size: 15px 15px;
-	}
-	.footer-contact ul > li.contact-4 {
-	background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_4.png?v=167) no-repeat scroll 0px center;
-	background-size: 15px 15px;
-	}
-	.footer-copyright{
-	background-color: #000;
-	padding: 15px 10px;
-	font-size: 13px;
-	}
-	.footer-copyright p {
-	margin: 0;
-	}
-	amp-sidebar {
-	min-width: 250px;
-	background: #fff;
-	padding: 30px;
-	}
-	.menu-amp a {
-	display: block;
-	padding: 10px;
-	}
-	.menu-amp .dropdown-menu {
-	padding-left: 15px;
-	}
-	.menu-amp .dropdown-menu .dropdown-menu {
-	padding-left: 30px;
-	}
-	.styled_header {
-	margin-bottom: 30px;
-	position: relative;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 40px;
-	}
-	.styled_header h2 {
-	font-size: 14px;
-	line-height: 14px;
-	margin: 0 0 10px;
-	font-weight: 400;
-	}
-	.styled_header.use_icon {
-	border-bottom: 1px dotted #333333;
-	}
-	.styled_header h3 {
-	font-weight: 500;
-	font-size:20px;
-	}
-	.styled_header.use_icon h3 {
-	margin: 0 0 20px;
-	}
-	.styled_header .icon {
-	position: absolute;
-	left: 50%;
-	bottom: -10px;
-	margin-left: -15px;
-	font-size: 20px;
-	text-align: center;
-	height: 18px;
-	width: 20px;
-	background: #fff;
-	}
-	.col-two {
-	width: 50%;
-	float: left;
-	}
-	.col-one {
-	width: 100%;
-	}
-	.product-lists .col-one {
-	width: 50%;
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-	.pro-loop {
-	display: block;
-	position: relative;	
-	overflow: hidden;	
-	height: 100%;
-	background:#fff;
-	margin-bottom: 10px;
-	}
-	.pro-loop a {display:block;}
-	.pro-loop .product-detail {padding: 20px 0;}
-	.pro-loop .product-img{
-	text-align: center;
-	position:relative;
-	overflow: hidden;
-	}
-	.pro-loop .product-img .product-sale,.pro-loop .product-img .sold-out{
-	position: absolute;
-	top: 10px;
-	font-size: 12px;
-	line-height: 1;
-	padding: 5px 10px;
-	font-weight: bold;
-	z-index: 9;
-	color: #252a2b;
-	background: #fff;
-	}
-	.pro-loop .product-img .product-sale {left: 10px;}
-	.pro-loop .product-img .sold-out {right: 10px;}
-	.pro-loop .product-img .sold-out span{opacity: .66;}
-	.product-detail .box-pro-detail{z-index: 9;width: 100%;}
-	.pro-loop .product-detail h3 {
-	color:#000;
-	margin: 0 0 5px;
-	font-size: 14px;
-	font-weight: normal;
-	position: relative;
-	}
-	.pro-loop .product-detail h3 a {
-	line-height: 16px;
-	overflow: hidden;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	display: -webkit-box;
-	}
-	p.pro-price {color:#252a2b;font-size: 14px;margin: 0;}
-	p.pro-price.highlight{color:#f94c43;}
-	p.pro-price span.pro-price-del {color:#939393;font-size: 13px;margin-left: 5px;}
-	
-	.pro-price-mb {
-	display:inline-block;
-	position: absolute;
-	left: 10px;
-	bottom: 10px;
-	font-size:9px;
-	}
-	.pro-price-mb .pro-price {
-	background: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	padding: 2px 8px;
-	border-radius: 2px;
-	font-size: 10px;
-	line-height: 20px;
-	font-weight: 500;
-	margin-right: 3px;
-	}
-	.pro-loop .product-detail {padding:5px 0;}
-	.pro-loop:nth-child(odd){
-	padding-right:5px;
-	padding-left: 10px;
-	}
-	.pro-loop:nth-child(even){
-	padding-left:5px;
-	padding-right:10px;
-	}
-	.pro-loop:nth-of-type(2n+1) {
-    clear: both;
-	}
+<head>
+	<meta charset="utf-8">
+	<title>
+		Banh khuếch tán &ndash; Detox Hemi
+	</title>
 
-	.text-center {
-	text-align: center;
-	}
-	.btn.btn-readmore {
-	display: inline-block;
-	margin-top: 20px;
-	padding: 0 30px;
-	outline: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	text-transform: uppercase;
-	height: 36px;
-	line-height: 38px;
-	border: none;
-	text-align: center;
-	letter-spacing: 0px;
-	-webkit-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
-	-moz-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
-	-o-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
-	-ms-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
-	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
-	cursor: pointer;
-	-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-	}
-	.banner-index {
-	margin-top: 15px;
-	}
-	.box-image-slide .box-featured-image {
-	margin-bottom: 10px;
-	}
-	.box-slide-thumb amp-img {
-	border: 1px solid #e7e7e7;
-	}
-	.box-infor-product .product-price span {
-	font-size: 24px;
-	color: #000;
-	margin-right: 25px;
-	}
-	.box-infor-product .product-price del{color: #777a7b;}
-	.form-control {
-	display: block;
-	width: 100%;
-	height: 34px;
-	padding: 6px 12px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #000;
-	background-color: #fff;
-	background-image: none;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-	}
-	.btn-detail {
-	text-transform: uppercase;
-	font-weight: bold;
-	border: 1px solid transparent;
-	position: relative;
-	font-size: 14px;
-	color:#ffffff;
-	text-align: center;
-	height: 48px;
-	cursor: pointer;
-	background: #00a7f4;
-	width:100%;
-	margin: 10px 0px;
-	}
-	.btn-detail:after {
-	content: "";
-	background-size: 22px;
-	position: absolute;	
-	top: -1px;
-	left: -1px;
-	display: block;
-	width: 48px;
-	height: 48px;
-	}
-	.btn-color-add:after {
-	background: url(https://theme.hstatic.net/200000210779/1000741659/14/add-cart.svg?v=167) no-repeat center center;
-	background-size: 22px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 0, 0, 0.2);
-	}
-	.banner-index {
-	padding: 0px 15px;
-	}
-	.colCustom li a {
-	color: #000;
-	text-align: left;
-	display: block;
-	line-height: 25px;
-	}
-	.clearfix{
-	clear: both;
-	}
-	.colCustom.col-one {
-	margin-bottom: 20px;
-	}
-	.footerBottom {
-	background: #fff;
-	color: #000;
-	line-height: 20px;
-	padding: 20px 10px;
-	}
-	.footerSocial li a {
-	color: #000;
-	font-size: 18px;
-	padding: 5px 10px;
-	}
-	.footerSocial li {
-	display: inline-block;
-	}
-</style>
+	<link rel="canonical" href="banh-khuech-tan%EF%B9%96view=amp.html" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
 
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
 
-	</head>
-	<body>
-		<header class="ampstart-headerbar header-fixed flex justify-start items-center">
-	<div class="ampstart-navbar-trigger" on="tap:header-sidebar.toggle" role="button" tabindex="0"><i class="fa fa-bars"></i></div>
-	<div class="logo">
-		
-		<a class="my0 mx-auto" href="../index%EF%B9%96view=amp.html">
-			<amp-img width="200" height="51" layout="fixed" src="https://file.hstatic.net/200000210779/file/logo_web__1_-removebg-preview_df6ec0cab6be4f05a9c1191045bc822e.png"></amp-img>
-		</a>
-		
-	</div>
-</header>
-<amp-sidebar id="header-sidebar" layout="nodisplay" side="right">
-	<ul class="menu-amp">
-		
-		
-		<li class="dropdown">
-			<a href="../collections/all%EF%B9%96view=amp.html" title="Sản Phẩm" class="">
-				<span>Sản Phẩm</span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				
-				<li>
-					<a href="../collections/cham-soc-nha-cua%EF%B9%96view=amp.html" title="Chăm Sóc Nhà Cửa">Chăm Sóc Nhà Cửa</a>
-					
-				</li>
-				
-				<li>
-					<a href="../collections/mui-huong-tri-lieu%EF%B9%96view=amp.html" title="Mùi Hương Trị Liệu">Mùi Hương Trị Liệu</a>
-					
-					<ul class="dropdown-menu">
-						
-						<li>
-							<a href="../collections/tinh-dau/tinhdau%EF%B9%96view=amp.html" title="Tinh Dầu">Tinh Dầu</a>
-						</li>
-						
-						<li>
-							<a href="../collections/nen-thom%EF%B9%96view=amp.html" title="Nến Thơm">Nến Thơm</a>
-						</li>
-						
-						<li>
-							<a href="../collections/sap-thom%EF%B9%96view=amp.html" title="Sáp Thơm">Sáp Thơm</a>
-						</li>
-						
-						<li>
-							<a href="sap-thom-tan-chay-wax-melt-tinh-dau-thien-nhien-thom-phong-ngu-thu-gian-va-qua-tang-cao-cap-fresh-home-lab%EF%B9%96view=amp.html" title="Wax Melt">Wax Melt</a>
-						</li>
-						
-						<li>
-							<a href="../collections/phu-kien%EF%B9%96view=amp.html" title="Phụ Kiện">Phụ Kiện</a>
-						</li>
-						
-					</ul>
-					
-				</li>
-				
-				<li>
-					<a href="../collections/my-pham-thien-nhien%EF%B9%96view=amp.html" title="Mỹ Phẩm Thiên Nhiên">Mỹ Phẩm Thiên Nhiên</a>
-					
-					<ul class="dropdown-menu">
-						
-						<li>
-							<a href="../collections/cham-soc-da-mat%EF%B9%96view=amp.html" title="Chăm Sóc Da Mặt">Chăm Sóc Da Mặt</a>
-						</li>
-						
-						<li>
-							<a href="../collections/cham-soc-moi%EF%B9%96view=amp.html" title="Chăm Sóc Môi">Chăm Sóc Môi</a>
-						</li>
-						
-						<li>
-							<a href="../collections/cham-soc-co-the%EF%B9%96view=amp.html" title="Chăm Sóc Cơ Thể">Chăm Sóc Cơ Thể</a>
-						</li>
-						
-					</ul>
-					
-				</li>
-				
-			</ul>
-		</li>
-		
-		
-		
-		<li class="dropdown">
-			<a href="../collections/set-qua-tang%EF%B9%96view=amp.html" title="Set Quà Tặng" class="">
-				<span>Set Quà Tặng</span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				
-				<li>
-					<a href="../collections/set-qua-tang/duoi300k%EF%B9%96view=amp.html" title="Dưới 300K">Dưới 300K</a>
-					
-				</li>
-				
-				<li>
-					<a href="../collections/set-qua-tang/300k500k%EF%B9%96view=amp.html" title="300K - 500K">300K - 500K</a>
-					
-				</li>
-				
-				<li>
-					<a href="../collections/set-qua-tang/tren500k%EF%B9%96view=amp.html" title="Trên 500k">Trên 500k</a>
-					
-				</li>
-				
-			</ul>
-		</li>
-		
-		
-		
-		<li class="dropdown">
-			<a href="../index%EF%B9%96view=amp.html" title="Dịch Vụ Doanh Nghiệp" class="">
-				<span>Dịch Vụ Doanh Nghiệp</span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				
-				<li>
-					<a href="../blogs/su-kien/dich-vu-workshop-doanh-nghiep-tai-fresh-home-lab%EF%B9%96view=amp.html" title="Workshop Doanh Nghiệp">Workshop Doanh Nghiệp</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/su-kien/qua-tang-doanh-nghiep-y-nghia-cung-fresh-home-lab%EF%B9%96view=amp.html" title="Quà Tặng Doanh Nghiệp">Quà Tặng Doanh Nghiệp</a>
-					
-				</li>
-				
-			</ul>
-		</li>
-		
-		
-		
-		<li>
-			<a href="../blogs/su-kien/workshop-lam-nen-thom-handmade%EF%B9%96view=amp.html" class="" title="Workshop">
-				<span>Workshop</span>
-			</a>
-		</li>
-		
-		
-		
-		<li class="dropdown">
-			<a href="../blogs/all%EF%B9%96view=amp.html" title="Blog" class="">
-				<span>Blog</span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				
-				<li>
-					<a href="../blogs/su-kien%EF%B9%96view=amp.html" title="Sự Kiện">Sự Kiện</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/tinh-dau%EF%B9%96view=amp.html" title="Tinh Dầu">Tinh Dầu</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/nen-thom%EF%B9%96view=amp.html" title="Nến Thơm">Nến Thơm</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/cham-soc-da%EF%B9%96view=amp.html" title="Chăm Sóc Da">Chăm Sóc Da</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/cham-soc-nha-cua%EF%B9%96view=amp.html" title="Chăm Sóc Nhà Cửa">Chăm Sóc Nhà Cửa</a>
-					
-				</li>
-				
-			</ul>
-		</li>
-		
-		
-		
-		<li class="dropdown">
-			<a href="../pages/about-us%EF%B9%96view=amp.html" title="Về Fresh" class="">
-				<span>Về Fresh</span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				
-				<li>
-					<a href="../pages/about-us%EF%B9%96view=amp.html" title="Chuyện Nhà Fresh">Chuyện Nhà Fresh</a>
-					
-				</li>
-				
-				<li>
-					<a href="../blogs/su-kien/chuong-trinh-vui-nguoi-gui-am-nguoi-nhan-tai-fresh-home-lab%EF%B9%96view=amp.html" title="Chương Trình Cộng Đồng">Chương Trình Cộng Đồng</a>
-					
-				</li>
-				
-			</ul>
-		</li>
-		
-		
-	</ul>
-</amp-sidebar>
+			to {
+				visibility: visible
+			}
+		}
 
-		<main>
-			<div class="bg-breadcrumb">
-				<ul class="breadcrumb clearfix">
-	<li><a href="../index%EF%B9%96view=amp.html" target="_self">Trang chủ</a></li>
-	
-	
-	
-	<li><i class="fa fa-angle-right"></i></li>
-	<li><a href="../collections/phu-kien%EF%B9%96view=amp.html" target="_self">Phụ Kiện</a></li>
-	
-	<li><i class="fa fa-angle-right"></i></li>
-	<li class="active"><span> Banh khuếch tán</span></li>
-	
-</ul>
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
 
-			</div>
-			<section>
-				<div class="main-content-pd">
-					<div class="box-image-slide">
-						<div class="box-featured-image">
-							
-							<amp-img width="1000" height="1250" layout="responsive" src="//product.hstatic.net/200000210779/product/2_45b72c8dac2b40d1b82f16e612ba422e_large.png"></amp-img>
-							
-						</div>
-						
-						<div class="box-slide-thumb">
-							<amp-carousel height="160"
-														layout="fixed-height"
-														type="carousel">
-								
-								
-								
-								
-								<amp-img src="//product.hstatic.net/200000210779/product/3_4bb95456398243dfbe48be735cee59bf_medium.png"
-												 width="128"
-												 height="160"
-												 alt="a sample image"></amp-img>
-								
-								
-								
-								<amp-img src="//product.hstatic.net/200000210779/product/5_f7998f92fa55422eaf7f2209aa8c7009_medium.png"
-												 width="128"
-												 height="160"
-												 alt="a sample image"></amp-img>
-								
-								
-							</amp-carousel>
-						</div>
-						
-					</div>
-					<div class="box-infor-product">
-						<h1 class="product-title">Banh khuếch tán</h1>
-						<p class="product-sku">SKU: FBKT</p>
-						<p class="product-price">
-							<span>10,000₫</span>
-							
-						</p>
-					</div>
-					<div>
-						
-						
-						
-						
-						<form method="get" action="../index.html" target="_top">
-							<div class="flex">
-								<div class="flexbox-content">
-									<select class="form-control" name="id">
-										
-										<option value="1085880625">Default Title</option>
-										
-									</select>
-								</div>
-								<div class="flexbox-auto-80px">
-									<select name="quantity" class="form-control">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
-								</div>
-							</div>
-							<button type="submit" class="ampstart-btn btn-detail btn-color-add">Thêm vào giỏ</button>
-						</form>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer>
-	<div class="footer-top">
-		<div class="menuColumn clearfix">
-			<div class="colCustom col-one">
-				<h3>Giới thiệu</h3>
-				<div class="footer-content">
-					<p>Công ty TNHH Mỹ phẩm Thiên nhiên Fresh Home Lab 
-<br>
-GPĐKKD số 0317042288 do Sở KHĐT TP.HCM cấp 22/11/2021
-<br>
-Địa chỉ: 23 đường số 5 , Phường 9, Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam
-<br>
-Địa chỉ cửa hàng: 1069 Phan Văn Trị, Phường 10, Quận Gò Vấp
-<br>
-Hotline: 0899.1567.39
-<br>
-Email: info@freshhomelab.com</p>
-					
-					<div class="logo-footer">
-						<a class="iconBCT" href="http://online.gov.vn/Home/WebDetails/109676" rel="nofollow">
-							<amp-img width="150" height="56" layout="fixed" src="https://file.hstatic.net/1000300454/file/logo_bct_019590229b4c4dfda690236b67f7aff4.png" alt="Logo Bộ Công Thương"></amp-img>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-			<div class="colCustom col-one">
-				<h3>Liên kết</h3>
-				<ul>
-					
-					<li><a href="../pages/phuong-thuc-thanh-toan%EF%B9%96view=amp.html">Hướng dẫn thanh toán</a></li>
-					
-					<li><a href="../pages/chinh-sach-doi-tra%EF%B9%96view=amp.html">Chính sách đổi trả</a></li>
-					
-					<li><a href="../pages/dieu-khoan-bao-mat%EF%B9%96view=amp.html">Chính sách bảo mật</a></li>
-					
-					<li><a href="../pages/huong-dan-mua-hang%EF%B9%96view=amp.html">Hướng dẫn mua hàng</a></li>
-					
-					<li><a href="../pages/huong-dan-thanh-toan%EF%B9%96view=amp.html">Hướng dẫn thanh toán</a></li>
-					
-					<li><a href="../pages/chinh-sach-kiem-hang%EF%B9%96view=amp.html">Chính sách kiểm hàng</a></li>
-					
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+
+			to {
+				visibility: visible
+			}
+		}
+
+	</style><noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+
+		</style>
+	</noscript>
+	<link rel="shortcut icon"
+		href="https://file.hstatic.net/200000210779/file/logo_web__2_-removebg-preview_20c6e6e5d305435397a4e02691c3bd77.png"
+		type="image/png" />
+	<style amp-custom>
+		body {
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+			color: #000;
+		}
+
+		ul,
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		p {
+			margin: 0 0 10px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		.clearfix:before,
+		.clearfix:after {
+			display: table;
+			content: " ";
+		}
+
+		.clearfix:after {
+			clear: both;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		.flex {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.flexbox-content {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1 1 0;
+			-ms-flex: 1 1 0;
+			flex: 1 1 0;
+			padding: 0 10px 10px 0;
+			box-sizing: border-box;
+			max-width: 100%;
+			min-width: 0;
+		}
+
+		.flexbox-auto-80 {
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 80px;
+			-ms-flex: 0 0 80px;
+			flex: 0 0 80px;
+		}
+
+		.items-center {
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		.justify-start {
+			-webkit-box-pack: start;
+			-ms-flex-pack: start;
+			justify-content: flex-start;
+		}
+
+		.main-content-pd {
+			padding: 0 10px;
+		}
+
+		.ampstart-headerbar {
+			background: #fff;
+			color: #000;
+			z-index: 999;
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+		}
+
+		.header-fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 0 15px;
+		}
+
+		.ampstart-navbar-trigger {
+			line-height: 3.5rem;
+			font-size: 2rem;
+		}
+
+		.logo {
+			margin: auto;
+		}
+
+		.logo img {
+			margin: 0;
+		}
+
+		.logo a {
+			font-size: 32px;
+			color: #65d1e6;
+		}
+
+		main {
+			padding-top: 57px;
+			margin-bottom: 20px;
+		}
+
+		section.slide {
+			padding: 0 10px;
+			margin-top: 10px;
+		}
+
+		.pagination-default {
+			margin: 15px 0px;
+			padding: 0px 15px;
+			text-align: center;
+		}
+
+		.pagination-default>div {
+			display: inline-block;
+		}
+
+		.pagination-default a {
+			border: 1px solid #E5E5E5;
+			border-left: none;
+			float: left;
+			font-style: normal;
+			font-weight: normal;
+			padding: 0px 12px;
+			height: 33px;
+			line-height: 33px;
+			color: #000;
+		}
+
+		.pagination-default a:first-child {
+			border-left: 1px solid #E5E5E5;
+		}
+
+		.pagination-default a.prev,
+		.pagination-default a.next,
+		.pagination-default a.prev-first,
+		.pagination-default a.next-last {
+			color: #000;
+			font-size: 18px;
+		}
+
+		.pagination-default .current {
+			background: #EFEFEF;
+			color: #999;
+		}
+
+		.pagination-default a:hover {
+			background: #EFEFEF;
+		}
+
+		.ampstart-navbar-trigger {
+			cursor: pointer;
+		}
+
+		.amp-close-image {
+			top: 10px;
+			left: 220px;
+			cursor: pointer;
+		}
+
+		.bg-breadcrumb {
+			background: #f4f4f4;
+			margin-bottom: 15px;
+		}
+
+		.breadcrumb {
+			margin: 0px;
+			background: none;
+			padding: 8px 10px;
+		}
+
+		.breadcrumb a,
+		.breadcrumb span,
+		.breadcrumb li {
+			font-size: 10px;
+			color: #000;
+			white-space: normal;
+			float: left;
+			padding: 0 3px;
+		}
+
+		main .head-title h1 {
+			font-size: 20px;
+			margin: 0 0 15px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 23px;
+		}
+
+		main .layout-excerpt {
+			padding: 10px 20px;
+			background: #f7f7f7;
+			text-align: center;
+		}
+
+		main .layout-excerpt p {
+			margin: 0;
+		}
+
+		main .layout-content {
+			margin-top: 15px;
+		}
+
+		main .layout-content img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.blog-posts .blog-loop {
+			margin-bottom: 25px;
+			padding: 0 10px;
+		}
+
+		.blog-posts .blog-post .blog-post-thumbnail {
+			margin-bottom: 25px;
+			display: block;
+		}
+
+		.blog-posts .blog-post .blog-post-title {
+			margin-bottom: 10px;
+			font-size: 16px;
+			text-transform: none;
+			letter-spacing: 0
+		}
+
+		.blog-posts .blog-post .blog-post-meta {
+			margin-bottom: 15px;
+			color: #999
+		}
+
+		.blog-posts .blog-post .blog-post-meta>span:after {
+			content: '/';
+			padding-left: 4px
+		}
+
+		.blog-posts .blog-post .blog-post-meta>span:last-child:after {
+			content: ''
+		}
+
+		.blog-posts .blog-post .blog-post-meta a {
+			color: #999
+		}
+
+
+		footer {
+			margin-top: 30px;
+		}
+
+		footer .footer-top {
+			padding: 20px 10px;
+			border-bottom: 1px solid #e7e7e7;
+			border-top: 1px solid #e7e7e7;
+		}
+
+		footer a {
+			color: #000;
+		}
+
+		footer .title {
+			color: #ffffff;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: left;
+			margin-bottom: 15px;
+			overflow: hidden;
+			line-height: 30px;
+		}
+
+		footer .about_us .message {
+			margin-bottom: 15px;
+			padding: 0;
+		}
+
+		footer .about_us ul li {
+			padding: 0;
+			line-height: 30px;
+		}
+
+		footer .about_us i {
+			margin-right: 7px;
+		}
+
+		footer .list-styled>li {
+			padding: 0;
+			line-height: 20px;
+			overflow: hidden;
+		}
+
+		footer .list-styled>li>a {
+			padding: 5px 0;
+			display: inline-block;
+			position: relative;
+			-webkit-transition: all 0.25s ease-out;
+			-moz-transition: all 0.25s ease-out;
+			-o-transition: all 0.25s ease-out;
+			-ms-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+		}
+
+		.footer-contact ul>li {
+			padding: 0 0px 5px 25px;
+			background-size: 15px 15px;
+			line-height: 22px;
+			font-size: 14px;
+		}
+
+		.footer-contact ul>li.contact-1 {
+			background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_1.png?v=167) no-repeat scroll 0px center;
+			background-size: 15px 15px;
+		}
+
+		.footer-contact ul>li.contact-2 {
+			background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_2.png?v=167) no-repeat scroll 0px center;
+			background-size: 15px 15px;
+		}
+
+		.footer-contact ul>li.contact-3 {
+			background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_3.png?v=167) no-repeat scroll 0px center;
+			background-size: 15px 15px;
+		}
+
+		.footer-contact ul>li.contact-4 {
+			background: rgba(0, 0, 0, 0) url(https://theme.hstatic.net/200000210779/1000741659/14/icon_footer_4.png?v=167) no-repeat scroll 0px center;
+			background-size: 15px 15px;
+		}
+
+		.footer-copyright {
+			background-color: #000;
+			padding: 15px 10px;
+			font-size: 13px;
+		}
+
+		.footer-copyright p {
+			margin: 0;
+		}
+
+		amp-sidebar {
+			min-width: 250px;
+			background: #fff;
+			padding: 30px;
+		}
+
+		.menu-amp a {
+			display: block;
+			padding: 10px;
+		}
+
+		.menu-amp .dropdown-menu {
+			padding-left: 15px;
+		}
+
+		.menu-amp .dropdown-menu .dropdown-menu {
+			padding-left: 30px;
+		}
+
+		.styled_header {
+			margin-bottom: 30px;
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+
+		.styled_header h2 {
+			font-size: 14px;
+			line-height: 14px;
+			margin: 0 0 10px;
+			font-weight: 400;
+		}
+
+		.styled_header.use_icon {
+			border-bottom: 1px dotted #333333;
+		}
+
+		.styled_header h3 {
+			font-weight: 500;
+			font-size: 20px;
+		}
+
+		.styled_header.use_icon h3 {
+			margin: 0 0 20px;
+		}
+
+		.styled_header .icon {
+			position: absolute;
+			left: 50%;
+			bottom: -10px;
+			margin-left: -15px;
+			font-size: 20px;
+			text-align: center;
+			height: 18px;
+			width: 20px;
+			background: #fff;
+		}
+
+		.col-two {
+			width: 50%;
+			float: left;
+		}
+
+		.col-one {
+			width: 100%;
+		}
+
+		.product-lists .col-one {
+			width: 50%;
+			float: left;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.pro-loop {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			height: 100%;
+			background: #fff;
+			margin-bottom: 10px;
+		}
+
+		.pro-loop a {
+			display: block;
+		}
+
+		.pro-loop .product-detail {
+			padding: 20px 0;
+		}
+
+		.pro-loop .product-img {
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.pro-loop .product-img .product-sale,
+		.pro-loop .product-img .sold-out {
+			position: absolute;
+			top: 10px;
+			font-size: 12px;
+			line-height: 1;
+			padding: 5px 10px;
+			font-weight: bold;
+			z-index: 9;
+			color: #252a2b;
+			background: #fff;
+		}
+
+		.pro-loop .product-img .product-sale {
+			left: 10px;
+		}
+
+		.pro-loop .product-img .sold-out {
+			right: 10px;
+		}
+
+		.pro-loop .product-img .sold-out span {
+			opacity: .66;
+		}
+
+		.product-detail .box-pro-detail {
+			z-index: 9;
+			width: 100%;
+		}
+
+		.pro-loop .product-detail h3 {
+			color: #000;
+			margin: 0 0 5px;
+			font-size: 14px;
+			font-weight: normal;
+			position: relative;
+		}
+
+		.pro-loop .product-detail h3 a {
+			line-height: 16px;
+			overflow: hidden;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			display: -webkit-box;
+		}
+
+		p.pro-price {
+			color: #252a2b;
+			font-size: 14px;
+			margin: 0;
+		}
+
+		p.pro-price.highlight {
+			color: #f94c43;
+		}
+
+		p.pro-price span.pro-price-del {
+			color: #939393;
+			font-size: 13px;
+			margin-left: 5px;
+		}
+
+		.pro-price-mb {
+			display: inline-block;
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			font-size: 9px;
+		}
+
+		.pro-price-mb .pro-price {
+			background: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			padding: 2px 8px;
+			border-radius: 2px;
+			font-size: 10px;
+			line-height: 20px;
+			font-weight: 500;
+			margin-right: 3px;
+		}
+
+		.pro-loop .product-detail {
+			padding: 5px 0;
+		}
+
+		.pro-loop:nth-child(odd) {
+			padding-right: 5px;
+			padding-left: 10px;
+		}
+
+		.pro-loop:nth-child(even) {
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.pro-loop:nth-of-type(2n+1) {
+			clear: both;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.btn.btn-readmore {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 0 30px;
+			outline: none;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			text-transform: uppercase;
+			height: 36px;
+			line-height: 38px;
+			border: none;
+			text-align: center;
+			letter-spacing: 0px;
+			-webkit-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
+			-moz-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
+			-o-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
+			-ms-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
+			transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, opacity 0.3s;
+			cursor: pointer;
+			-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+		}
+
+		.banner-index {
+			margin-top: 15px;
+		}
+
+		.box-image-slide .box-featured-image {
+			margin-bottom: 10px;
+		}
+
+		.box-slide-thumb amp-img {
+			border: 1px solid #e7e7e7;
+		}
+
+		.box-infor-product .product-price span {
+			font-size: 24px;
+			color: #000;
+			margin-right: 25px;
+		}
+
+		.box-infor-product .product-price del {
+			color: #777a7b;
+		}
+
+		.form-control {
+			display: block;
+			width: 100%;
+			height: 34px;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #000;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+			-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		}
+
+		.btn-detail {
+			text-transform: uppercase;
+			font-weight: bold;
+			border: 1px solid transparent;
+			position: relative;
+			font-size: 14px;
+			color: #ffffff;
+			text-align: center;
+			height: 48px;
+			cursor: pointer;
+			background: #00a7f4;
+			width: 100%;
+			margin: 10px 0px;
+		}
+
+		.btn-detail:after {
+			content: "";
+			background-size: 22px;
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			display: block;
+			width: 48px;
+			height: 48px;
+		}
+
+		.btn-color-add:after {
+			background: url(https://theme.hstatic.net/200000210779/1000741659/14/add-cart.svg?v=167) no-repeat center center;
+			background-size: 22px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		.banner-index {
+			padding: 0px 15px;
+		}
+
+		.colCustom li a {
+			color: #000;
+			text-align: left;
+			display: block;
+			line-height: 25px;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+
+		.colCustom.col-one {
+			margin-bottom: 20px;
+		}
+
+		.footerBottom {
+			background: #fff;
+			color: #000;
+			line-height: 20px;
+			padding: 20px 10px;
+		}
+
+		.footerSocial li a {
+			color: #000;
+			font-size: 18px;
+			padding: 5px 10px;
+		}
+
+		.footerSocial li {
+			display: inline-block;
+		}
+
+	</style>
+
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+	<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+</head>
+
+<body>
+	<header class="ampstart-headerbar header-fixed flex justify-start items-center">
+		<div class="ampstart-navbar-trigger" on="tap:header-sidebar.toggle" role="button" tabindex="0"><i
+				class="fa fa-bars"></i></div>
+		<div class="logo">
+
+			<a class="my0 mx-auto" href="../index%EF%B9%96view=amp.html">
+				<amp-img width="200" height="51" layout="fixed"
+					src="https://file.hstatic.net/200000210779/file/logo_web__1_-removebg-preview_df6ec0cab6be4f05a9c1191045bc822e.png"></amp-img>
+			</a>
+
+		</div>
+	</header>
+	<amp-sidebar id="header-sidebar" layout="nodisplay" side="right">
+		<ul class="menu-amp">
+
+
+			<li class="dropdown">
+				<a href="../collections/all%EF%B9%96view=amp.html" title="Sản Phẩm" class="">
+					<span>Sản Phẩm</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+
+					<li>
+						<a href="../collections/cham-soc-nha-cua%EF%B9%96view=amp.html" title="Chăm Sóc Nhà Cửa">Chăm Sóc Nhà
+							Cửa</a>
+
+					</li>
+
+					<li>
+						<a href="../collections/mui-huong-tri-lieu%EF%B9%96view=amp.html" title="Mùi Hương Trị Liệu">Mùi Hương Trị
+							Liệu</a>
+
+						<ul class="dropdown-menu">
+
+							<li>
+								<a href="../collections/tinh-dau/tinhdau%EF%B9%96view=amp.html" title="Tinh Dầu">Tinh Dầu</a>
+							</li>
+
+							<li>
+								<a href="../collections/nen-thom%EF%B9%96view=amp.html" title="Nến Thơm">Nến Thơm</a>
+							</li>
+
+							<li>
+								<a href="../collections/sap-thom%EF%B9%96view=amp.html" title="Sáp Thơm">Sáp Thơm</a>
+							</li>
+
+							<li>
+								<a href="sap-thom-tan-chay-wax-melt-tinh-dau-thien-nhien-thom-phong-ngu-thu-gian-va-qua-tang-cao-cap-fresh-home-lab%EF%B9%96view=amp.html"
+									title="Wax Melt">Wax Melt</a>
+							</li>
+
+							<li>
+								<a href="../collections/phu-kien%EF%B9%96view=amp.html" title="Phụ Kiện">Phụ Kiện</a>
+							</li>
+
+						</ul>
+
+					</li>
+
+					<li>
+						<a href="../collections/my-pham-thien-nhien%EF%B9%96view=amp.html" title="Mỹ Phẩm Thiên Nhiên">Mỹ Phẩm Thiên
+							Nhiên</a>
+
+						<ul class="dropdown-menu">
+
+							<li>
+								<a href="../collections/cham-soc-da-mat%EF%B9%96view=amp.html" title="Chăm Sóc Da Mặt">Chăm Sóc Da
+									Mặt</a>
+							</li>
+
+							<li>
+								<a href="../collections/cham-soc-moi%EF%B9%96view=amp.html" title="Chăm Sóc Môi">Chăm Sóc Môi</a>
+							</li>
+
+							<li>
+								<a href="../collections/cham-soc-co-the%EF%B9%96view=amp.html" title="Chăm Sóc Cơ Thể">Chăm Sóc Cơ
+									Thể</a>
+							</li>
+
+						</ul>
+
+					</li>
+
 				</ul>
+			</li>
+
+
+
+			<li class="dropdown">
+				<a href="../collections/set-qua-tang%EF%B9%96view=amp.html" title="Set Quà Tặng" class="">
+					<span>Set Quà Tặng</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+
+					<li>
+						<a href="../collections/set-qua-tang/duoi300k%EF%B9%96view=amp.html" title="Dưới 300K">Dưới 300K</a>
+
+					</li>
+
+					<li>
+						<a href="../collections/set-qua-tang/300k500k%EF%B9%96view=amp.html" title="300K - 500K">300K - 500K</a>
+
+					</li>
+
+					<li>
+						<a href="../collections/set-qua-tang/tren500k%EF%B9%96view=amp.html" title="Trên 500k">Trên 500k</a>
+
+					</li>
+
+				</ul>
+			</li>
+
+
+
+			<li class="dropdown">
+				<a href="../index%EF%B9%96view=amp.html" title="Dịch Vụ Doanh Nghiệp" class="">
+					<span>Dịch Vụ Doanh Nghiệp</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+
+					<li>
+						<a href="../blogs/su-kien/dich-vu-workshop-doanh-nghiep-tai-fresh-home-lab%EF%B9%96view=amp.html"
+							title="Workshop Doanh Nghiệp">Workshop Doanh Nghiệp</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/su-kien/qua-tang-doanh-nghiep-y-nghia-cung-fresh-home-lab%EF%B9%96view=amp.html"
+							title="Quà Tặng Doanh Nghiệp">Quà Tặng Doanh Nghiệp</a>
+
+					</li>
+
+				</ul>
+			</li>
+
+
+
+			<li>
+				<a href="../blogs/su-kien/workshop-lam-nen-thom-handmade%EF%B9%96view=amp.html" class="" title="Workshop">
+					<span>Workshop</span>
+				</a>
+			</li>
+
+
+
+			<li class="dropdown">
+				<a href="../blogs/all%EF%B9%96view=amp.html" title="Blog" class="">
+					<span>Blog</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+
+					<li>
+						<a href="../blogs/su-kien%EF%B9%96view=amp.html" title="Sự Kiện">Sự Kiện</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/tinh-dau%EF%B9%96view=amp.html" title="Tinh Dầu">Tinh Dầu</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/nen-thom%EF%B9%96view=amp.html" title="Nến Thơm">Nến Thơm</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/cham-soc-da%EF%B9%96view=amp.html" title="Chăm Sóc Da">Chăm Sóc Da</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/cham-soc-nha-cua%EF%B9%96view=amp.html" title="Chăm Sóc Nhà Cửa">Chăm Sóc Nhà Cửa</a>
+
+					</li>
+
+				</ul>
+			</li>
+
+
+
+			<li class="dropdown">
+				<a href="../pages/about-us%EF%B9%96view=amp.html" title="Về Detox Hemi" class="">
+					<span>Về Detox Hemi</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+
+					<li>
+						<a href="../pages/about-us%EF%B9%96view=amp.html" title="Chuyện Nhà Detox Hemi">Chuyện Nhà Detox Hemi</a>
+
+					</li>
+
+					<li>
+						<a href="../blogs/su-kien/chuong-trinh-vui-nguoi-gui-am-nguoi-nhan-tai-fresh-home-lab%EF%B9%96view=amp.html"
+							title="Chương Trình Cộng Đồng">Chương Trình Cộng Đồng</a>
+
+					</li>
+
+				</ul>
+			</li>
+
+
+		</ul>
+	</amp-sidebar>
+
+	<main>
+		<div class="bg-breadcrumb">
+			<ul class="breadcrumb clearfix">
+				<li><a href="../index%EF%B9%96view=amp.html" target="_self">Trang chủ</a></li>
+
+
+
+				<li><i class="fa fa-angle-right"></i></li>
+				<li><a href="../collections/phu-kien%EF%B9%96view=amp.html" target="_self">Phụ Kiện</a></li>
+
+				<li><i class="fa fa-angle-right"></i></li>
+				<li class="active"><span> Banh khuếch tán</span></li>
+
+			</ul>
+
+		</div>
+		<section>
+			<div class="main-content-pd">
+				<div class="box-image-slide">
+					<div class="box-featured-image">
+
+						<amp-img width="1000" height="1250" layout="responsive"
+							src="//product.hstatic.net/200000210779/product/2_45b72c8dac2b40d1b82f16e612ba422e_large.png"></amp-img>
+
+					</div>
+
+					<div class="box-slide-thumb">
+						<amp-carousel height="160" layout="fixed-height" type="carousel">
+
+
+
+
+							<amp-img src="//product.hstatic.net/200000210779/product/3_4bb95456398243dfbe48be735cee59bf_medium.png"
+								width="128" height="160" alt="a sample image"></amp-img>
+
+
+
+							<amp-img src="//product.hstatic.net/200000210779/product/5_f7998f92fa55422eaf7f2209aa8c7009_medium.png"
+								width="128" height="160" alt="a sample image"></amp-img>
+
+
+						</amp-carousel>
+					</div>
+
+				</div>
+				<div class="box-infor-product">
+					<h1 class="product-title">Banh khuếch tán</h1>
+					<p class="product-sku">SKU: FBKT</p>
+					<p class="product-price">
+						<span>10,000₫</span>
+
+					</p>
+				</div>
+				<div>
+
+
+
+
+					<form method="get" action="../index.html" target="_top">
+						<div class="flex">
+							<div class="flexbox-content">
+								<select class="form-control" name="id">
+
+									<option value="1085880625">Default Title</option>
+
+								</select>
+							</div>
+							<div class="flexbox-auto-80px">
+								<select name="quantity" class="form-control">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+						<button type="submit" class="ampstart-btn btn-detail btn-color-add">Thêm vào giỏ</button>
+					</form>
+				</div>
 			</div>
-			<div class="colCustom col-one footer-contact">
-				<h3>Địa chỉ cửa hàng</h3>
-				<ul>
-					<li class="contact-1">1069 Phan Văn Trị, Phường 10, Quận Gò Vấp</li>
-					<li class="contact-2">0899.1567.39</li>
-					<li class="contact-3"></li>
-					<li class="contact-4">info@freshhomelab.com</li>
-				</ul>	
+		</section>
+	</main>
+	<footer>
+		<div class="footer-top">
+			<div class="menuColumn clearfix">
+				<div class="colCustom col-one">
+					<h3>Giới thiệu</h3>
+					<div class="footer-content">
+						<p>Công ty TNHH Mỹ phẩm Thiên nhiên Detox Hemi
+							<br>
+							GPĐKKD số 0317042288 do Sở KHĐT Nghệ An cấp 22/11/2023
+							<br>
+							Địa chỉ: Lê Hồng Phong, Thành phố Vinh, Nghệ An, Việt Nam
+							<br>
+							
+							<br>
+							Hotline: 0899.1567.39
+							<br>
+							Email: info@freshhomelab.com
+						</p>
+
+						<div class="logo-footer">
+							<a class="iconBCT" href="http://online.gov.vn/Home/WebDetails/109676" rel="nofollow">
+								<amp-img width="150" height="56" layout="fixed"
+									src="https://file.hstatic.net/1000300454/file/logo_bct_019590229b4c4dfda690236b67f7aff4.png"
+									alt="Logo Bộ Công Thương"></amp-img>
+							</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="colCustom col-one">
+					<h3>Liên kết</h3>
+					<ul>
+
+						<li><a href="../pages/phuong-thuc-thanh-toan%EF%B9%96view=amp.html">Hướng dẫn thanh toán</a></li>
+
+						<li><a href="../pages/chinh-sach-doi-tra%EF%B9%96view=amp.html">Chính sách đổi trả</a></li>
+
+						<li><a href="../pages/dieu-khoan-bao-mat%EF%B9%96view=amp.html">Chính sách bảo mật</a></li>
+
+						<li><a href="../pages/huong-dan-mua-hang%EF%B9%96view=amp.html">Hướng dẫn mua hàng</a></li>
+
+						<li><a href="../pages/huong-dan-thanh-toan%EF%B9%96view=amp.html">Hướng dẫn thanh toán</a></li>
+
+						<li><a href="../pages/chinh-sach-kiem-hang%EF%B9%96view=amp.html">Chính sách kiểm hàng</a></li>
+
+					</ul>
+				</div>
+				<div class="colCustom col-one footer-contact">
+					<h3>Địa chỉ cửa hàng</h3>
+					<ul>
+						<li class="contact-1">1069 Phan Văn Trị, Phường 10, Quận Gò Vấp</li>
+						<li class="contact-2">0899.1567.39</li>
+						<li class="contact-3"></li>
+						<li class="contact-4">info@freshhomelab.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footerBottom clearfix">
-		<div class="container">
-			<div class="row">
-				<div class="col-one">
-					
-				</div>
-				<div class="col-one text-center">
-					<p>Copyright © 2023 <a href="../index%EF%B9%96view=amp.html"> Fresh Home Lab</a>. <a target='_blank' href='https://www.haravan.com/?utm_campaign=poweredby&amp;utm_medium=haravan&amp;utm_source=onlinestore'>Powered by Haravan</a></p>
+		<div class="footerBottom clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-one">
+
+					</div>
+					<div class="col-one text-center">
+						<p>Copyright © 2023 <a href="../index%EF%B9%96view=amp.html"> Detox Hemi</a>. <a target='_blank'
+								href='https://www.haravan.com/?utm_campaign=poweredby&amp;utm_medium=haravan&amp;utm_source=onlinestore'>Powered
+								by Haravan</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 
 
 
 
-	</body>
+</body>
+
 </html>
